@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * [공통] 반환 포맷관련 Class_210712
+ * [공통] 반환 포맷관련 Class
  */
 @Data
 public class CommFormat implements Serializable {

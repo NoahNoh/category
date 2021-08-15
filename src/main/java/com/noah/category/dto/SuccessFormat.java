@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
- * [공통] 성공반환 Class_210712
+ * [공통] 성공반환 Class
  */
 @EqualsAndHashCode(callSuper=true)
 @Data

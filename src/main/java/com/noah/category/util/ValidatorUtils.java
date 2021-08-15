@@ -10,7 +10,7 @@ import java.util.Collection;
 
 @Component
 public class ValidatorUtils implements Validator {
-	private SpringValidatorAdapter vaildator;
+	private final SpringValidatorAdapter vaildator;
 
 	public ValidatorUtils() {
 		this.vaildator = new SpringValidatorAdapter(Validation.buildDefaultValidatorFactory().getValidator());

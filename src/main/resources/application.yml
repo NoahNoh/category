@@ -19,9 +19,9 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
   datasource:
-    url: jdbc:mysql://localhost:33060/Noah?useUnicode=true&charaterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    url: jdbc:mysql://localhost:3306/Noah?useUnicode=true&charaterEncoding=UTF-8&serverTimezone=Asia/Seoul
     username: root
-    password: stagefive
+    password: 1q2w3e4r
 management:
   endpoints:
     web:

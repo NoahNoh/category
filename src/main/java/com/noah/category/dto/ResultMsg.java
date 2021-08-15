@@ -6,7 +6,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * [공통] API 결과 메시지 Class_210712
+ * [공통] API 결과 메시지 Class
  */
 @Data
 public class ResultMsg implements Serializable {

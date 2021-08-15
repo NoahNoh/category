@@ -31,6 +31,9 @@ public class CategoryController {
 		this.validatorUtils = validatorUtils;
 	}
 
+	/**
+	 * Category: 등록 API
+	 */
 	@PostMapping
 	public ResultMsg saveCategory(@RequestBody @Valid CategoryReqDTO info, BindingResult result, Errors errors) throws NoahException {
 		if(result.hasErrors()) {
@@ -49,18 +52,27 @@ public class CategoryController {
 		}
 	}
 
+	/**
+	 * Category: 목록조회 API
+	 */
 	@GetMapping
 	public List<CategoryResDTO> listCategory(@RequestParam(required = false) String categoryName) {
 		log.info(noahUtils.setDefaultLogMessage(""));
 		return this.categoryService.listCategory(categoryName);
 	}
 
+	/**
+	 * Category: 단일조회 API
+	 */
 	@GetMapping("{id}")
 	public CategoryResDTO findCategory(@PathVariable int id) {
 		log.info(noahUtils.setDefaultLogMessage(id));
 		return this.categoryService.findCategory(id);
 	}
 
+	/**
+	 * Category: 편집 API
+	 */
 	@PutMapping("{id}")
 	public ResultMsg editCategory(@PathVariable int id, @RequestBody @Valid CategoryEditReqDTO info, BindingResult result, Errors errors) throws NoahException {
 		if(result.hasErrors()) {
@@ -87,6 +99,9 @@ public class CategoryController {
 		}
 	}
 
+	/**
+	 * Category: 제거 API
+	 */
 	@DeleteMapping("{id}")
 	public ResultMsg deleteCategory(@PathVariable int id) throws NoahException {
 		log.info(noahUtils.setDefaultLogMessage(id));

@@ -2,12 +2,10 @@ package com.noah.category.service;
 
 import com.noah.category.dao.dsl.CategoryDslRepository;
 import com.noah.category.exception.NoahException;
-import com.noah.category.dao.dsl.CategoryDslRepository;
 import com.noah.category.dto.ResultMsg;
 import com.noah.category.dto.req.CategoryEditReqDTO;
 import com.noah.category.dto.req.CategoryReqDTO;
 import com.noah.category.dto.res.CategoryResDTO;
-import com.noah.category.exception.NoahException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
