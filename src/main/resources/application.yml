@@ -1,0 +1,28 @@
+
+spring:
+  profiles:
+    active: local
+
+---
+
+spring:
+  config:
+    use-legacy-processing: true
+    active:
+      on-profile: local
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:33060/Noah?useUnicode=true&charaterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: root
+    password: stagefive
+management:
+  endpoints:
+    web:
+      base-path: /
